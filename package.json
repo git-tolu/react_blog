@@ -2,9 +2,10 @@
   "name": "react_blog",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node_modules/.bin/nodemon --exec babel-node server.js",
+    "test": "ava"
   },
   "keywords": [
     "express",
@@ -18,6 +19,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.23.9",
+    "@babel/node": "^7.23.9",
+    "ava": "^6.1.1",
     "nodemon": "^3.0.3"
   }
 }
